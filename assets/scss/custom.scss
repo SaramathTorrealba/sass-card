@@ -1,6 +1,23 @@
-.position{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+.card-position{ 
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
 }
+
 .bg-logo{
-    background-color: $color-rose;
+  background-color: $color-rose;
+}
+
+.card-title-extend{
+  color: $color-font;
+}
+
+.card-text, .btn {
+  @extend .card-title-extend;  
+}   
+.card-title{
+  color: $rose
 }
